@@ -1,0 +1,42 @@
+Prerequisites:
+
+- Python (3.12.4) with Anaconda distribution installed on the machine.
+- TauDEM (5.37 - complete Windows Installer) installed on the machine (https://hydrology.usu.edu/taudem/taudem5/downloads.html).
+
+Setting Up the Environment:
+-----------------------------------------------------------------------------------------------------
+
+Downloading Anaconda:
+
+Download the version for your operating system (https://www.anaconda.com/download/success) and install it.
+
+Replicating the Environment Used to Run IHC:
+
+- Anaconda Distribution:
+
+
+
+Select the path of the .yml file, pressing Shift + Right-click on its icon, then click "Copy as path." After that, paste it in place of "path_to_ihc_env_file.yml" in the following step.
+
+Open the Anaconda Command Prompt and run the following command:
+
+    conda env create -f path_to_ihc_env_file.yml
+
+
+This action will create an environment named ihc_env with the Python version used during the script development and download all necessary libraries in the correct versions to run the script.
+
+--------------------------------------------------------------------------------------------------------
+
+Running the Application:
+
+In an Anaconda Command Prompt:
+
+1. Activate the environment with the command:
+   
+       conda activate ihc_env
+
+2. Copy the path of the "Inter_IHC.py" script.
+
+3. Type the following command, replacing the text in quotes with the actual file path, and press Enter:
+
+       python "path_to_Inter_IHC.py"
